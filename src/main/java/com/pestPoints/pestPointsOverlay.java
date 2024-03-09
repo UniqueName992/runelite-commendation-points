@@ -41,18 +41,18 @@ public class pestPointsOverlay extends Overlay {
     }
 
     private void putConf(String key, Object val) {
-        configMan.setConfiguration("Pest Control Points", key, val);
+        configMan.setConfiguration("pest-control-points", key, val);
     }
 
     private Object getConf (String key) {
-        return configMan.getConfiguration("Pest Control Points", key);
+        return configMan.getConfiguration("pest-control-points", key);
     }
     @Override
     public Dimension render(Graphics2D graphics) {
         // FOR DEBUG
-//        configMan.unsetConfiguration("Pest Control Points", "Points");
-//        configMan.unsetConfiguration("Pest Control Points", "Difficulty");
-//        configMan.unsetConfiguration("Pest Control Points", "CA");
+//        configMan.unsetConfiguration("pest-control-points", "Points");
+//        configMan.unsetConfiguration("pest-control-points", "Difficulty");
+//        configMan.unsetConfiguration("pest-control-points", "CA");
 
         // If we aren't in a game and not on the void island, don't draw
         if (client.getWidget(ComponentID.PEST_CONTROL_BLUE_SHIELD) == null && client.getLocalPlayer().getWorldLocation().getRegionID() != 10537) { return null; }

@@ -4,7 +4,7 @@ import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
-@ConfigGroup("Pest Control Points")
+@ConfigGroup("pest-control-points")
 public interface pestPointsConfig extends Config
 {
 	@ConfigItem(
